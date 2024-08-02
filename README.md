@@ -1,31 +1,6 @@
 # Assessment
 ![alt text](image.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ![alt text](image-14.png)
 
 ![alt text](image-15.png)
