@@ -1,25 +1,24 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-frontend
+  name: order-processing-deployment
   labels:
-    app: myapp-frontend
+    app: order-processing
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myapp-frontend
+      app: order-processing
   template:
     metadata:
       labels:
-        app: myapp-frontend
+        app: order-processing
     spec:
       containers:
-        - name: front-end
-          image: eklavya163940/front-end:v1
+        - name: order-processing
+          image: eklavya163940/order-processing:v1
           ports:
            - containerPort: 80
-
 
 
         

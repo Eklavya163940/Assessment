@@ -1,22 +1,22 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: myapp-frontend
+  name: product-catalog-deployment
   labels:
-    app: myapp-frontend
+    app: product-catalog
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: myapp-frontend
+      app: product-catalog
   template:
     metadata:
       labels:
-        app: myapp-frontend
+        app: product-catalog
     spec:
       containers:
-        - name: front-end
-          image: eklavya163940/front-end:v1
+        - name: product-catalog
+          image: eklavya163940/product-catalog:v1
           ports:
            - containerPort: 80
 
